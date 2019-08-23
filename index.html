@@ -12,10 +12,6 @@
     <link rel="stylesheet" href="main.css" type="text/css" />
     <link rel="stylesheet" href="slideAnimations.css" type="text/css" />
 
-    <!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
-	<![endif]-->
-
 </head>
 
 <body>
@@ -24,11 +20,12 @@
         <input type="button" value="&larr;" class="slideChangeBtn slideChangeBtn--left" onclick="previousSlide()">
         <input type="button" value="&rarr;" class="slideChangeBtn slideChangeBtn--right" onclick="nextSlide()">
         <img src="img/bigPicSlide1.jpg" alt="big pic slide" class="mainSlides">
-        <img src="img/bigPicSlide2.jpg" alt="big pic slide" class="mainSlides slidePic-hidden">
-        <img src="img/bigPicSlide3.jpg" alt="big pic slide" class="mainSlides slidePic-hidden">
-        <img src="img/bigPicSlide4.jpg" alt="big pic slide" class="mainSlides slidePic-hidden">
+        <img src="img/bigPicSlide2.jpg" alt="big pic slide" class="mainSlides slidePic--hidden">
+        <img src="img/bigPicSlide3.jpg" alt="big pic slide" class="mainSlides slidePic--hidden">
+        <img src="img/bigPicSlide4.jpg" alt="big pic slide" class="mainSlides slidePic--hidden">
+        <div class="animation--time"></div>
     </div>
 
-        <script src="slides.js" type="text/javascript"></script>
+    <script src="slides.js" type="text/javascript"></script>
 
 </body>
