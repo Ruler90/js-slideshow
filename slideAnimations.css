@@ -1,0 +1,64 @@
+.animation {
+  position: absolute;
+  animation-timing-function: linear;
+}
+
+.animation--time {
+  animation-duration: 700ms;
+}
+
+.animation__slideFromLeftToRight {
+  animation-name: slideFromLeftToRight;
+}
+
+@keyframes slideFromLeftToRight {
+  0% {
+    left: -800px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.animation__slideFromZeroToRight {
+  animation-name: slideFromZeroToRight;
+}
+
+@keyframes slideFromZeroToRight {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: 800px;
+  }
+}
+
+.animation__slideFromRightToLeft {
+  animation-name: slideFromRightToLeft;
+}
+
+@keyframes slideFromRightToLeft {
+  0% {
+    left: 800px;
+  }
+
+  100% {
+    left: 0px;
+  }
+}
+
+.animation__slideFromZeroToLeft {
+  animation-name: slideFromZeroToLeft;
+}
+
+@keyframes slideFromZeroToLeft {
+  0% {
+    left: 0px;
+  }
+
+  100% {
+    left: -800px;
+  }
+}
