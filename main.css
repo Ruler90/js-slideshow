@@ -1,14 +1,19 @@
-.bigPics {
+.slidePics {
     overflow: hidden;
     position: relative;
-    height: 100vh;
+    width: 800px;
+    height: 450px;
     display: flex;
     align-items: center;
 }
 
-.bigPics img {
+.slidePics img {
     height: auto;
     width: 100%;
+}
+
+.slidePic-hidden {
+    display: none;
 }
 
 .slideChangeBtn {
@@ -23,12 +28,8 @@
     background: #fff;
 }
 
-.bigPics:hover > .slideChangeBtn {
+.slidePics:hover>.slideChangeBtn {
     opacity: 0.3;
-}
-
-.bigPic--hidden {
-    display: none;
 }
 
 .slideChangeBtn--left {
