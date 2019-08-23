@@ -1,6 +1,6 @@
 .animation {
   position: absolute;
-  animation-timing-function: linear;
+  animation-timing-function: ease;
 }
 
 .animation--time {
