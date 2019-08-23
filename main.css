@@ -1,0 +1,44 @@
+.bigPics {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.bigPics img {
+    height: auto;
+    width: 100%;
+}
+
+.slideChangeBtn {
+    width: 50px;
+    height: 60px;
+    font-size: 1.7rem;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: 300ms opacity ease;
+    border: none;
+    background: #fff;
+}
+
+.bigPics:hover > .slideChangeBtn {
+    opacity: 0.3;
+}
+
+.bigPic--hidden {
+    display: none;
+}
+
+.slideChangeBtn--left {
+    left: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.slideChangeBtn--right {
+    right: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
