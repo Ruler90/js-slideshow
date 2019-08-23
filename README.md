@@ -1,5 +1,6 @@
 # JS Slideshow
 
+
 ## How is it build?
 
 ### 1. HTML
@@ -10,6 +11,7 @@
 
 ### 3. JS
 - one function for next slide, one function for previous slide (optional if you will not use buttons) and setInterval for next slide.
+ 
  
 ## How is it work?
 
