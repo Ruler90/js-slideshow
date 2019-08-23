@@ -18,7 +18,7 @@ How is it work?
 - Container div has position: relative because when images slide in or out they get position: absolute and have fixed position where the animation starts and ends.
 - IMPORTANT - container div need to have fixed height and width or you won't have any control how it looks like on website. Moreover if it won't have fixed height it will disappear when the slides are changing (display: none is added to one and removed from another but entire div disappears).
 - Container div has flex just for buttons.
-- If you use bigger images than the container, use height: auto and width: 100% for images to make them fit the container.
+- If you use bigger images than the container, use height: auto and width: 100% for images to make them fit the container. If you don't want the pictures to be cropped, keep the right aspect ratio of the pictures and container.
 - If buttons won't have z-index, they will disappear when slides are changing.
 - Buttons have opacity: 0 by default and they will show when you hover over container.
 
