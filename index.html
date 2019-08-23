@@ -3,16 +3,16 @@
 
 <head>
 
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Happy Kittens</title>
+    <title>JS Slides Example</title>
     <meta name="description" content="" />
-    <meta name="keywords" content=" " />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-	
-	<link rel="stylesheet" href="css/main.css" type="text/css" />
-	
-	<!--[if lt IE 9]>
+
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="slideAnimations.css" type="text/css" />
+
+    <!--[if lt IE 9]>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
 	<![endif]-->
 
@@ -20,13 +20,15 @@
 
 <body>
 
-<div class="bigPics">
-            <input type="button" value="&larr;" class="slideChangeBtn slideChangeBtn--left" onclick="previousSlide()">
-            <input type="button" value="&rarr;" class="slideChangeBtn slideChangeBtn--right" onclick="nextSlide()">
-            <img src="img/bigPicSlide1.jpg" alt="big pic slide" class="mainSlides">
-            <img src="img/bigPicSlide2.jpg" alt="big pic slide" class="mainSlides bigPic--hidden">
-            <img src="img/bigPicSlide3.jpg" alt="big pic slide" class="mainSlides bigPic--hidden">
-            <img src="img/bigPicSlide4.jpg" alt="big pic slide" class="mainSlides bigPic--hidden">
-        </section>
+    <div class="slidePics">
+        <input type="button" value="&larr;" class="slideChangeBtn slideChangeBtn--left" onclick="previousSlide()">
+        <input type="button" value="&rarr;" class="slideChangeBtn slideChangeBtn--right" onclick="nextSlide()">
+        <img src="img/bigPicSlide1.jpg" alt="big pic slide" class="mainSlides">
+        <img src="img/bigPicSlide2.jpg" alt="big pic slide" class="mainSlides slidePic-hidden">
+        <img src="img/bigPicSlide3.jpg" alt="big pic slide" class="mainSlides slidePic-hidden">
+        <img src="img/bigPicSlide4.jpg" alt="big pic slide" class="mainSlides slidePic-hidden">
+    </div>
+
+        <script src="slides.js" type="text/javascript"></script>
 
 </body>
