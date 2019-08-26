@@ -4,22 +4,22 @@
 ## How is it build?
 
 ### 1. HTML
-- It's just one div which is a container for all pictures, optional buttons if you want to change slides manually and img tags with pictures we want to use as slides.
+- It's just one div which is a container for all pictures, optional buttons if you want to change slides manually and img tags with pictures you want to use as slides.
 
 ### 2. CSS
 - 2 files - first for styling and second for animations.
 
 ### 3. JS
-- one function for next slide, one function for previous slide (optional if you will not use buttons) and setInterval for next slide.
+- one function for next slide, one function for previous slide (optional if you won't use buttons) and setInterval for next slide.
  
  
 ## How is it work?
 
 ### 1. HTML:
-- The most important thing is that all images need to have the same class so we can grab them with javascript (here -> mainSlides -> this class doesn't do anything else) and the second class that gives display: none (here --> slidePic--hidden). Don't give this class to the picture that you want to display first.
+- The most important thing is that all images need to have the same class so you can grab them with javascript (here -> mainSlides -> this class doesn't do anything else) and the second class that gives display: none (here --> slidePic--hidden). Don't give this class to the picture that you want to display first.
 
 ### 2. CSS:
-- Container div has overflow: hidden because we don't want to see pictures when they slide in or out outside the container.
+- Container div has overflow: hidden because you don't want to see pictures when they slide in or out outside the container.
 - Container div has position: relative because when images slide in or out they get position: absolute and have fixed position where the animation starts and ends.
 - IMPORTANT - container div need to have fixed height and width or you won't have any control how it looks like on website. Moreover if it won't have fixed height it will disappear when the slides are changing (display: none is added to one and removed from another but entire div disappears).
 - Container div has flex just for buttons.
@@ -33,12 +33,12 @@
 - IMPORTANT - value of left and right depends on container width (if you have 1600px, just change 800px and -800px to 1600px and -1600px; if you have 100vw, make it 100vh and -100vh etc.).
 
 ### 4. JavaScript:
-- This code is based on one common class for all images -> we grab them with querySelectorAll and then use in for loops.
+- This code is based on one common class for all images -> you grab them with querySelectorAll and then use in for loops.
 - The loop used in nextSlide function (starting from its second block):
     * the loop checks if any of the images has slidePic--hidden class (the one that gives display: none) and if no, it gives animation classes to it to make it slide out;
     * removes slidePic--hidden from the picture that is next in the HTML code and gives animation classes to it to make it slide in;
     * uses setTimeout to remove animation classes after the time that is needed to end animation and adds slidePic--hidden to picture that didn't have that class.
-- First block of nextSlide function -> everything as above but it applies when we see the last image in HTML code and want to see the first one.
+- First block of nextSlide function -> everything as above but it applies when you see the last image in HTML code and want to see the first one.
 - The previousSlide function works backwards and it's optional when you won't have buttons to change to next/previous slide.
 - There is setInterval so the slides can auto change.
 - nextSlide and previousSlide functions have 2 lines of code that will reset auto change interval when you click the button that has that function. 
