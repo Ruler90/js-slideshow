@@ -23,13 +23,21 @@
     position: absolute;
     z-index: 1;
     opacity: 0;
-    transition: 300ms opacity ease;
+    transition: 300ms opacity ease, 300ms transform ease;
     border: none;
     background: #fff;
 }
 
 .slidePics:hover>.slideChangeBtn {
     opacity: 0.3;
+}
+
+.slidePics:hover>.slideChangeBtn:hover {
+    opacity: 0.7;
+}
+
+.slidePics:hover > .slideChangeBtn:active {
+    transform: scale(0.9);
 }
 
 .slideChangeBtn--left {
