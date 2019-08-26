@@ -26,6 +26,8 @@
 - If you use bigger images than the container, use height: auto and width: 100% for images to make them fit the container. If you don't want the pictures to be cropped, keep the right aspect ratio of the pictures and container.
 - If buttons won't have z-index, they will disappear when slides are changing.
 - Buttons have opacity: 0 by default and they will show when you hover over container.
+- When you hover over buttons, they will be even more visible.
+- There is scaling animation of the button when button is clicked.
 
 ### 3. Animations CSS:
 - There are 3 animation classes (to not repeat our code): first class for main properties, second for animation's time (you can merge them into one but remeber to remove not used class from js code) and the third with animation's name and then keyframes for each named animation.
