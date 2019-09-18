@@ -10,7 +10,7 @@
 - 2 files - first for styling and second for animations.
 
 ### 3. JS
-- one function for next slide, one function for previous slide (optional if you won't use buttons) and setInterval for next slide.
+- One function for next slide, one function for previous slide (optional if you won't use buttons) and setInterval for next slide.
  
  
 ## How is it work?
@@ -32,6 +32,7 @@
 ### 3. Animations CSS:
 - There are 3 animation classes (to not repeat our code): first class for main properties, second for animation's time (you can merge them into one but remeber to remove not used class from js code) and the third with animation's name and then keyframes for each named animation.
 - Animations give position: absolute to slides and make them slide in or out from left to right, from right to left and from normal position to left or right (I called them slideFromZeroToRight and slideFromZeroToLeft).
+18.09.2019 I changed absolute left and right in animations to transform: translateX().
 - IMPORTANT - value of left and right depends on container width (if you have 1600px, just change 800px and -800px to 1600px and -1600px; if you have 100vw, make it 100vh and -100vh etc.).
 
 ### 4. JavaScript:
