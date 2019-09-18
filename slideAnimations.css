@@ -13,11 +13,11 @@
 
 @keyframes slideFromLeftToRight {
   0% {
-    left: -800px;
+    transform: translateX(-800px);
   }
 
   100% {
-    left: 0px;
+    transform: translateX(0);
   }
 }
 
@@ -27,11 +27,11 @@
 
 @keyframes slideFromZeroToRight {
   0% {
-    left: 0px;
+    transform: translateX(0);
   }
 
   100% {
-    left: 800px;
+    transform: translateX(800px);
   }
 }
 
@@ -41,11 +41,11 @@
 
 @keyframes slideFromRightToLeft {
   0% {
-    left: 800px;
+    transform: translateX(800px);
   }
 
   100% {
-    left: 0px;
+    transform: translateX(0);
   }
 }
 
@@ -55,10 +55,10 @@
 
 @keyframes slideFromZeroToLeft {
   0% {
-    left: 0px;
+    transform: translateX(0);
   }
 
   100% {
-    left: -800px;
+    transform: translateX(-800px);
   }
 }
