@@ -5,6 +5,7 @@
 
 ### 1. HTML
 - It's just one div which is a container for all pictures, optional buttons if you want to change slides manually and img tags with pictures you want to use as slides.
+- For optimization use pics that are coresponding with your slider width and height (in this example I used Full HD pics).
 
 ### 2. CSS
 - 2 files - first for styling and second for animations.
