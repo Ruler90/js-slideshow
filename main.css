@@ -12,16 +12,12 @@
     object-fit: cover;
 }
 
-.slidePic--hidden {
-    display: none;
-}
-
 .slideChangeBtn {
     width: 50px;
     height: 60px;
     font-size: 1.7rem;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     opacity: 0;
     transition: 300ms opacity ease, 300ms transform ease;
     border: none;
