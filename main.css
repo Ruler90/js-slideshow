@@ -10,6 +10,7 @@
 .slidePics img {
     width: 100%;
     object-fit: cover;
+    flex-shrink: 0;
 }
 
 .slideChangeBtn {
