@@ -22,8 +22,7 @@
 ### 2. CSS:
 - Container div has overflow: hidden because you don't want to see pictures when they slide in or out outside the container.
 - Container div has position: relative because when images slide in or out they get position: absolute and have fixed position where the animation starts and ends.
-- IMPORTANT - container div need to have fixed height and width or you won't have any control how it looks like on website. Moreover if it won't have fixed height it will disappear when the slides are changing (display: none is added to one and removed from another but entire div disappears).
-- Container div has flex just for buttons.
+- Container div has flex for buttons and images. Images have flex-shrink: 0 just for Firefox, which shrinks all images on page load to fit them into container instead of showing first slide (it's ok on Chrome even without flex-shrink).
 - If you use bigger images than the container, give them width: 100% and object-fit: cover so they will fit the container. If you don't want the pictures to be cropped, keep the right aspect ratio of the pictures and container.
 - If buttons won't have z-index, they will disappear when slides are changing.
 - Buttons have opacity: 0 by default and they will show when you hover over the container.
