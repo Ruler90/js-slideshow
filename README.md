@@ -14,7 +14,7 @@
 - One function for next slide, one function for previous slide (optional if you won't use buttons) and setInterval for next slide.
  
  
-## How is it work?
+## How does it work?
 
 ### 1. HTML:
 - The most important thing is that all images need to have the same class so you can grab them with javascript (here -> mainSlides -> this class doesn't do anything else) and the second class for active slide (first slide by default).
