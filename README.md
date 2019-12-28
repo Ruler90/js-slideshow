@@ -1,25 +1,23 @@
 # JS Slideshow
 
-
 ## How is it build?
 
 ### 1. HTML
 - It's just one div which is a container for all pictures, optional buttons if you want to change slides manually and img tags with pictures you want to use as slides.
-- For optimization use pics that are coresponding with your slider width and height (in this example I used Full HD pics).
 
 ### 2. CSS
-- 2 files - first for styling and second for animations.
+- one file for styling and one for animations.
 
 ### 3. JS
 - One function for next slide, one function for previous slide (optional if you won't use buttons) and setInterval for next slide.
+
  
- 
-## How is it work?
+## How does it work?
 
 ### 1. HTML:
 - The most important thing is that all images need to have the same class so you can grab them with javascript (here -> mainSlides -> this class doesn't do anything else) and the second class for active slide (first slide by default).
 
-### 2. CSS:
+### 2. Styles CSS:
 - Container div has overflow: hidden because you don't want to see pictures when they slide in or out outside the container.
 - Container div has position: relative because when images slide in or out they get position: absolute and have fixed position where the animation starts and ends.
 - Container div has flex for buttons and images. Images have flex-shrink: 0 just for Firefox, which shrinks all images on page load to fit them into container instead of showing first slide (it's ok on Chrome even without flex-shrink).
@@ -31,9 +29,7 @@
 
 ### 3. Animations CSS:
 - There are 3 animation classes (to not repeat our code): first class for main properties, second for animation's time (you can merge them into one but remember to remove not used class from js code) and the third with animation's name and then keyframes for each named animation.
-- Animations give position: absolute to slides and make them slide in or out from left to right, from right to left and from normal position to left or right (I called them slideFromZeroToRight and slideFromZeroToLeft).
-18.09.2019 I changed absolute left and right in animations to transform: translateX().
-- IMPORTANT - value of left and right depends on container width (if you have 1600px, just change 800px and -800px to 1600px and -1600px; if you have 100vw, make it 100vh and -100vh etc.).
+- Animations are giving position: absolute to slides and making them slide in or out from left to right, from right to left and from normal position to left or right (I called them slideFromZeroToRight and slideFromZeroToLeft).
 
 ### 4. JavaScript:
 - This code is based on one common class for all images -> you grab them with querySelectorAll and then use in for loops.

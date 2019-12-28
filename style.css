@@ -1,8 +1,8 @@
 .slidePics {
     overflow: hidden;
     position: relative;
-    width: 800px;
-    height: 450px;
+    max-width: 800px;
+    height: auto;
     display: flex;
     align-items: center;
 }
