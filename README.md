@@ -44,4 +44,7 @@
 
 ### 5. Bonus - JS:
 - First, I wrote 700 in every setTimeout in JS code. When I wanted to change animation duration time, there were many changes to make. Now I added one div with class animation--time and grabbed it with javascript, removed 's' from string (there was '0.7s'), changed it to number (with + operator) and multiplied by 1000 to get 700.
-Now you need to make one change (in animation--time class) and this change will apply to js code too. 
+Now you need to make one change (in animation--time class) and this change will apply to js code too.
+
+### 6. Updates:
+- 05.01.2020 - Added Media Queries to make slide changing buttons responsive.

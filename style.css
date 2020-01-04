@@ -25,6 +25,22 @@
     background: #fff;
 }
 
+@media screen and (max-width: 700px) {
+    .slideChangeBtn {
+    width: 40px;
+    height: 50px;
+    font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .slideChangeBtn {
+    width: 35px;
+    height: 45px;
+    font-size: 1.3rem;
+    }
+}
+
 .slidePics:hover>.slideChangeBtn {
     opacity: 0.3;
 }
